@@ -37,33 +37,6 @@ const PostList = () => {
     }
   };
 return(
-    <div>
-      <h1>Lista dei Post</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Titolo</th>
-            <th>Contenuto</th>
-            <th>Categoria</th>
-            <th>Azioni</th>
-          </tr>
-        </thead>
-        <tbody>
-          {posts.map(post => (
-            <tr key={post.id}>
-              <td>{post.id}</td>
-              <td>{post.title}</td>
-              <td>{post.content}</td>
-              <td>{post.category}</td>
-              <td>
-                <button onClick={() => deletePost(post.id)}>Elimina</button>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-);
+)
 };
 export default PostList
